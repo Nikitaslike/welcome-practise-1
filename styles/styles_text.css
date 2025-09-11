@@ -14,3 +14,24 @@ h2 {
 .h-elements h6 {
     color: rgb(20, 0, 118);
 }
+
+img {
+    border-radius: 15px;
+}
+
+/* Тут створюю стиль для зораження капібари. Більш того, додаю "кольоровий ореол" */
+.capybara-square-1 {
+    margin: 10px;
+    box-shadow:
+        0 0 18px 3px #ffffba,  
+        0 0 24px 4px #baffc9,  
+        0 0 30px 5px #bae1ff
+}
+
+
+/* Стиль для таблиці */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}

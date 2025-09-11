@@ -16,32 +16,18 @@ div {
 }
 
 .container-1,
-.container-3 {
+.container-3,
+.container-5,
+.container-7 {
     background-color: rgb(238, 247, 250);
 }
 
 .container-2,
-.container-4 {
+.container-4,
+.container-6 {
     background-color: rgb(229, 243, 229);
 }
-
-/* h1 {
-    color: darkblue;
-}
-
-h2 {
-    color: darkgreen;
-} */
 
 .h-elements {
     padding: 0;
 }
-
-/* .h-elements h1,
-.h-elements h2,
-.h-elements h3,
-.h-elements h4,
-.h-elements h5,
-.h-elements h6 {
-    color: rgb(20, 0, 118);
-} */
