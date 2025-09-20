@@ -5,7 +5,10 @@
     <title>Виходити в Інтернет – легко!</title>
     <link rel="stylesheet" href="./styles/styles_divs.css" />
     <link rel="stylesheet" href="./styles/styles_text.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -15,16 +18,16 @@
           <li><a href="#headings">Заголовки</a></li>
           <li><a href="#lists">Списки</a></li>
           <li><a href="#styles-elements">Вбудовані елементи</a></li>
-          <li><a href="#special-block-1">Додатковий блок №1</a></li>
+          <li><a href="#special-block-1">Додатково №1</a></li>
           <li><a href="#images">Зображення</a></li>
           <li><a href="#links">Посилання</a></li>
           <li><a href="#tables">Таблиці</a></li>
+          <li><a href="#seo-liquid-glass">Семантика</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-
       <div class="container-welcome">
         <h1>Виходити в Інтернет – легко!</h1>
         <p>
@@ -33,7 +36,7 @@
         </p>
       </div>
 
-      <div class="container-1" id ="headings">
+      <div class="container-1" id="headings">
         <h2>Заголовки</h2>
         <p>
           В HTML треба написати<br /><code
@@ -189,7 +192,7 @@
         </p>
       </div>
 
-      <div class="container-6" id ="links">
+      <div class="container-6" id="links">
         <h2>Посилання в HTML</h2>
         <p>Посилання створюються за допомогою тега <code>&lt;a&gt;</code>.</p>
 
@@ -257,6 +260,120 @@
     &lt;/table&gt;
         </code></pre>
       </div>
+
+      <div class="container-8" id="seo-liquid-glass">
+        <article>
+          <h2>Семантика та Liquid Glass</h2>
+          <p>
+            Семантичні теги допомагають структурувати ваш HTML-код, роблячи його
+            більш зрозумілим для браузерів і пошукових систем. Ось кілька
+            прикладів семантичних тегів:
+          </p>
+          <ul>
+            <li>
+              <code>&lt;header&gt;</code>: Використовується для визначення
+              верхньої частини сторінки або розділу.
+            </li>
+            <li>
+              <code>&lt;nav&gt;</code>: Використовується для навігаційних
+              посилань.
+            </li>
+            <li>
+              <code>&lt;main&gt;</code>: Визначає основний вміст сторінки.
+            </li>
+            <li>
+              <code>&lt;section&gt;</code>: Використовується для групування
+              тематично пов'язаного вмісту.
+            </li>
+            <li>
+              <code>&lt;article&gt;</code>: Використовується для незалежного
+              вмісту, такого як статті або блоги.
+            </li>
+            <li>
+              <code>&lt;footer&gt;</code>: Визначає нижню частину сторінки або
+              розділу.
+            </li>
+          </ul>
+          <p>
+            Використання семантичних тегів покращує SEO (пошукову оптимізацію)
+            вашого сайту, оскільки пошукові системи краще розуміють структуру
+            вашого контенту.
+          </p>
+          <p>
+            Liquid Glass - це концепція веб-дизайну, яка передбачає використання
+            прозорих і напівпрозорих елементів для створення ефекту "рідкого
+            скла". Це може включати використання прозорих фонових зображень,
+            напівпрозорих кольорів і ефектів розмиття.
+          </p>
+          <p>
+            Щоб створити ефект Liquid Glass, можна використовувати
+            CSS-властивості, такі як <code>background-color</code>,
+            <code>backdrop-filter</code> для розмиття фону, і
+            <code>box-shadow</code> для створення глибини.
+          </p>
+          <p>Ось приклад CSS-коду для створення ефекту Liquid Glass:</p>
+          <pre><code>
+  background: linear-gradient(
+        135deg, 
+        rgba(255, 255, 255, 0.25), 
+        rgba(255, 255, 255, 0.05)
+    );
+
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+
+    border-radius: 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 
+        0 8px 25px rgba(0, 0, 0, 0.3),   
+        inset 0 0 10px rgba(255, 255, 255, 0.1); 
+
+    padding: 14px 35px;
+        </code></pre>
+          <p>
+            Використання семантичних тегів разом з ефектом Liquid Glass може
+            значно покращити вигляд і функціональність вашого веб-сайту.
+          </p>
+        </article>
+      </div>
     </main>
+
+    <footer>
+        <p>Практична робота №1-4 з предмету «Вступ до фаху» коледжу ОФККТ</p>
+        <p>Розробляв студент 24ПР1 Мірошниченко Нікіта</p>
+        <a
+          href="https://www.facebook.com/nick.nikitaslike/"
+          target="_blank"
+          title="Facebook"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg"
+            alt="Facebook"
+            width="28"
+            height="28"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/nikitaslike"
+          target="_blank"
+          title="Instagram"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+            alt="Instagram"
+            width="28"
+            height="28"
+          />
+        </a>
+        <a href="https://t.me/nikitaslike" target="_blank" title="Telegram">
+          <img
+            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg"
+            alt="Telegram"
+            width="28"
+            height="28"
+          />
+        </a>
+    </footer>
   </body>
 </html>

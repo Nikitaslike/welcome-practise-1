@@ -1,9 +1,10 @@
 html {
     scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
 }
 
 main > div, main > h1 {
-    scroll-margin-top: 120px; 
+    scroll-margin-top: 100px; 
 }
 
 header {
@@ -12,8 +13,8 @@ header {
     left: 50%;
     transform: translateX(-50%);
 
-    width: 80%; 
-    max-width: 1100px; 
+    width: 90%; 
+    max-width: 1200px; 
     z-index: 1000;
 
     background: linear-gradient(
@@ -135,15 +136,6 @@ div {
     animation: fadeUp 0.8s ease forwards;
 }
 
-div:hover {
-    box-shadow: 
-        0 12px 35px rgba(0, 0, 0, 0.4),
-        inset 0 2px 4px rgba(255, 255, 255, 0.5),
-        inset 0 -3px 8px rgba(255, 255, 255, 0.15);
-    transform: translateY(-5px) scale(1.01);
-    transition: all 0.3s ease;
-}
-
 @keyframes fadeUp {
     to {
         opacity: 1;
@@ -167,7 +159,7 @@ div:hover {
 }
 
 .container-welcome {
-    background-color: rgb(227, 227, 251);
+    background-color: rgb(241, 241, 252);
     text-align: center;
 }
 
@@ -175,16 +167,17 @@ div:hover {
 .container-3,
 .container-5,
 .container-7 {
-    background-color: rgb(238, 247, 250);
+    background-color: rgb(248, 255, 252);
 }
 
 .container-2,
 .container-4,
-.container-6 {
-    background-color: rgb(229, 243, 229);
+.container-6, 
+.container-8 {
+    background-color: rgb(248, 255, 248);
 }
 
-.h-elements {
+.h-elements, social-icons {
     padding: 0;
 
     background: none !important;
@@ -197,4 +190,52 @@ div:hover {
     opacity: 1 !important;
     transform: none !important;
     animation: none !important;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px; 
+    
+    text-align: left;
+    padding: 30px 50px;
+    font-size: 12pt;
+    color: #222;
+    margin-top: 60px;
+
+    background: linear-gradient(
+        135deg, 
+        rgba(255, 255, 255, 0.35), 
+        rgba(255, 255, 255, 0.1)
+    );
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25),
+                inset 0 0 12px rgba(255, 255, 255, 0.3);
+
+    overflow: hidden;
+}
+
+footer a {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+footer a img {
+    transition: transform 0.3s, filter 0.3s;
+}
+
+footer a img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 5px rgba(0, 117, 175, 0.6));
+}
+
+@keyframes shimmer {
+    0% { transform: translate(-20%, -20%) rotate(25deg); }
+    50% { transform: translate(20%, 20%) rotate(25deg); }
+    100% { transform: translate(-20%, -20%) rotate(25deg); }
 }
